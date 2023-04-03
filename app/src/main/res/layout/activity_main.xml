@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <!--    LAYOUT NAVBAR   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_navbar"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        >
+
+        <!--   LAYOUT  SEARCH VIEW     -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_search_view"
+            >
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:hint="Cari layanan, makanan, dan tujuan"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <!--     LAYOUT  PROFILE     -->
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_profile"
+            >
+
+            <ImageView
+                android:id="@+id/img_cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/doit"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    LAYOUT KONTEN1 BIRU  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_konten"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <!--    GOPAY   -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="10dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_gopay"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/tags"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gopay"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="Saldo Masih"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="4dp"
+                android:text="Banyak"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <!--    BAYAR   -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bayar"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bayar"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+        <!--    ISI SALDO   -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@drawable/plus"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Isi Saldo"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <!--    EKSPLOR   -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@drawable/eksplor"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eksplor"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    LAYOUT KONTEN 2     -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <!--        ICON GORIDE, GOCAR, DLL     -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gojekk" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GoRide" />
+
+        </LinearLayout>
+
+        <!--       GOCAR       -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gocar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GoCar" />
+
+        </LinearLayout>
+
+        <!--        GOFOOD       -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gogarpusendok" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GoFood" />
+
+        </LinearLayout>
+
+        <!--        GOSEND       -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gokardus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GoSend" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <!--        ICON GOMART, DLL     -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gokeranjang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GoMart" />
+
+        </LinearLayout>
+
+        <!--       GOTAGIHAN      -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gosurat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GoTagihan" />
+
+        </LinearLayout>
+
+        <!--        GOTIX       -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gopink" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GoTix" />
+
+        </LinearLayout>
+
+        <!--        LAINNYA       -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="56dp"
+                android:src="@drawable/gomenu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lainnya" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/rounded_search_view"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:src="@drawable/patrickijo"
+            android:layout_marginLeft="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="53 XP Lagi ada harta karun"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="7dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"/>
+
+        </LinearLayout>
+
+        <!--       HARTA KARUN     -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/panahkanan"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belanja Makin Hemat"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Dapetin diskon dan harga spesialnya di tokopedia"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sekarang sebelum kehabisan!"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/gambartokped">
+
+    </LinearLayout>
+
+    <!--    LAYOUT FOOTER  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rumahijo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beranda"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gerigi"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/waktu"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesanan"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pesan"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
